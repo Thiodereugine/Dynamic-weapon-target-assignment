@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weapon Prediction</title>
+    <link rel="stylesheet" href="static/styles.css"> <!-- Optional: link to a CSS file for styling -->
+</head>
+<body>
+    <h1>Weapon Prediction</h1>
+    <form action="/predict" method="POST">
+        <!-- Weapon ID -->
+        <label for="Weapon ID">Weapon ID:</label>
+        <input type="text" id="Weapon ID" name="Weapon ID" value="W00001" readonly><br><br>
+
+        <!-- Weapon Type -->
+        <label for="Weapon Type">Weapon Type:</label>
+        <select id="Weapon Type" name="Weapon Type" required>
+            <option value="Cannon">Cannon</option>
+            <option value="Missile">Missile</option>
+            <option value="Shotgun">Shotgun</option>
+            <option value="Drone">Drone</option>
+            <option value="Interceptor">Interceptor</option>
+        </select><br><br>
+
+        <!-- Weapon Speed -->
+        <label for="Weapon Speed">Weapon Speed (m/s):</label>
+        <input type="number" id="Weapon Speed" name="Weapon Speed" required><br><br>
+
+        <!-- Target Distance -->
+        <label for="Target Distance">Target Distance (m):</label>
+        <input type="number" id="Target Distance" name="Target Distance" required><br><br>
+
+        <!-- Target Type -->
+        <label for="Target Type">Target Type:</label>
+        <select id="Target Type" name="Target Type" required>
+            <option value="Aircraft">Aircraft</option>
+            <option value="Bunker">Bunker</option>
+            <option value="Infantry">Infantry</option>
+            <option value="Missile">Missile</option>
+        </select><br><br>
+
+        <!-- Priority -->
+        <label for="Priority">Priority:</label>
+        <select id="Priority" name="Priority" required>
+            <option value="High">High</option>
+            <option value="Medium">Medium</option>
+            <option value="Low">Low</option>
+        </select><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

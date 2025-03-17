@@ -1,0 +1,7 @@
+/flask_app
+    /static
+        /css
+        /images  # Store plot images here
+    /templates
+        index.html
+    app.py
